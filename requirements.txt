@@ -1,0 +1,10 @@
+astropy
+astroplan
+gcn-kafka
+six
+argparse
+numpy
+pandas
+
+slack-sdk
+discord.py
