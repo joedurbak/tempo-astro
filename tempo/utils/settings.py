@@ -150,8 +150,8 @@ SLACK = {
 }
 
 GCN = {
-    'client_id': '',
-    'client_secret': '',
+    'client_id': os.environ.get('GCNCLIENTID', ''),
+    'client_secret': os.environ.get('GCNCLIENTSECRET', ''),
     'topics': [
         'gcn.classic.voevent.FERMI_GBM_ALERT',
         'gcn.classic.voevent.FERMI_GBM_FIN_POS',
@@ -176,7 +176,7 @@ GCN = {
     ]
 }
 
-gcn_testing = True
+gcn_testing = False
 
 if gcn_testing:
     GCN['topics'] = [
