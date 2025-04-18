@@ -5,6 +5,7 @@ six
 argparse
 numpy
 pandas
+tabular
 
 slack-sdk
 discord.py
